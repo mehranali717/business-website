@@ -75,3 +75,9 @@
     @apply bg-background text-foreground;
   }
 }
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  color: #fff;
+}
+.css-1aquho2-MuiTabs-indicator{ 
+  background-color: transparent !important;
+}
