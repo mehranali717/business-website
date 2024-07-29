@@ -1,0 +1,48 @@
+import Image from "next/image"
+import protfolioHeroImage from "../../../public/img/Hero.png";
+import portfolioImg from "../../../public/img/Portfolio.png";
+import objectsImg from "../../../public/img/objects.png";
+import phonenumberImg from "../../../public/img/phonenumber.svg";
+import emailImg from "../../../public/img/email.svg";
+import innvationImg from "../../../public/img/Innovation.svg";
+import classes from "./portfolioHero.module.css"
+import GradientBtn from "@/components/gradient-btn"
+
+const PortfolioHero = () => {
+    return <div className={classes.protfolioHeroWrapper}>
+        <section className="FHD:w-[1320px] MHD:w-[1100px] HD:w-[900px] lg:w-[800px] max-lg:hidden mx-auto relative">
+            <div className={classes.protfolioHero}>
+                <div className="flex">
+                    <div className={classes.protfolioHeroDescription}>
+                        <span className={classes.tagline}>We've delivered </span>
+                        <span className={classes.states}>200+</span>
+                        <h1 className={classes.heading}>Successful
+                            Projects</h1>
+                        <div className="max-md:justify-center max-md:flex max-md:items-center">
+                            <GradientBtn text="Book a Discovery Call" className="w-[246px] md:w-[246px]" />
+                        </div>
+                    </div>
+                    <div className={classes.protfolioHeroImg}>
+                        <div className={classes.portfolio}>
+                            <Image src={portfolioImg} width height />
+                        </div>
+                        <Image src={protfolioHeroImage} width={614} height={678} alt="protfolioHero image" />
+                        <div className={classes.phonenumber}>
+                            <Image src={phonenumberImg} width height/>
+                        </div>
+                        <div className={classes.email}>
+                            <Image src={emailImg} width height/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className={classes.innovationImgWrapper}>
+                <Image src={innvationImg} width height alt="innovation img" />
+            </div>
+        </section>
+        <div className={classes.objectsWrapper}>
+        <Image src={objectsImg} width height alt="objects image here"/>
+        </div>
+    </div>
+}
+export default PortfolioHero

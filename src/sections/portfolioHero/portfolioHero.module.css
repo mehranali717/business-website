@@ -1,0 +1,72 @@
+.protfolioHeroWrapper {
+    background: url(../../../public/img/Frame.png);
+}
+.protfolioHero {
+    padding-top: 127px;
+}
+
+.protfolioHeroDescription {
+    display: flex;
+    flex-direction: column;
+    max-width: 315px;
+    width: 100%;
+}
+
+.tagline {
+    padding-bottom: 22px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    color: var(--fill-base-white);
+}
+
+.states {
+    background: linear-gradient(180deg, #F33CC0 13.43%, #4349FF 73.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 1.2;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding-bottom: 3.58px;
+}
+
+.heading {
+    background: linear-gradient(180deg, #F33CC0 13.43%, #4349FF 73.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.2;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding-bottom: 58px;
+}
+.protfolioHeroImg {
+    padding-top: 20px;
+    position: relative;
+}
+.portfolio {
+    position: absolute;
+    top: -5px;
+    right: -173px;
+}
+.phonenumber {
+    position: absolute;
+    bottom: 145px;
+    right: -153px;
+}
+.email {
+    position: absolute;
+    bottom: 50px;
+    left: -10px;
+}
+.objectsWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.innovationImgWrapper {
+    position: absolute;
+    top:120px;
+    left: -230px;
+}
