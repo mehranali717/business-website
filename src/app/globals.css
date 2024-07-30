@@ -33,7 +33,7 @@
     --ring: 0 0% 3.9%;
 
     --radius: 0.5rem;
-    --fill-base-white:#fff;
+    --fill-base-white: #fff;
   }
 
   .dark {
@@ -71,13 +71,44 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
-.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+
+.css-1aquho2-MuiTabs-indicator {
+  background-color: transparent !important;
+}
+
+.css-aym9vq-MuiButtonBase-root-MuiTab-root {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5px;
+  color: #fff;
+  padding: 0;
+  max-width: initial;
+  min-width: initial;
+  min-height: initial;
+}
+
+.css-aym9vq-MuiButtonBase-root-MuiTab-root img {
+  margin-right: 5px;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.css-10w330c-MuiButtonBase-root-MuiPaginationItem-root {
   color: #fff;
 }
-.css-1aquho2-MuiTabs-indicator{ 
-  background-color: transparent !important;
+
+.css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  color: #0E35E3;
+}
+
+.css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon {
+  border: 1px solid #343434
 }

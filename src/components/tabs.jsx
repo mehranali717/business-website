@@ -3,8 +3,15 @@ import { Tabs, Tab, Box } from "@mui/material";
 import TabPanel from "./tabsPanel";
 import { useState } from "react";
 import { BlockChain, Ecommerce, FeaturedProject } from "@/sections";
+import allIcon from "../../public/icons/AllIcon.svg";
+import blockchainIcon from "../../public/icons/blockchainIcon.svg";
+import aiIcon from "../../public/icons/AIIcon.svg";
+import webIcon from "../../public/icons/wdIcon.svg";
+import ecommIcon from "../../public/icons/ecommIcon.svg";
+import CustomPagination from "./pagination"
 
-const CustomTab = () => {
+const CustomTab = (props) => {
+  const { tabWrapper, tabInner } = props;
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -14,22 +21,26 @@ const CustomTab = () => {
   return (
     <section className="FHD:w-[1320px] MHD:w-[1100px] HD:w-[900px] lg:w-[800px] max-lg:hidden mx-auto relative">
       <Box sx={{ width: "100%" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-          sx={{ backgroundColor: 'red', border:'1px solid red' }}
-        >
-          <Tab label="All" id="tab-0" aria-controls="tabpanel-0" />
-          <Tab label="Blockchain" id="tab-1" aria-controls="tabpanel-1" />
-          <Tab label="AI" id="tab-2" aria-controls="tabpanel-2" />
-          <Tab label="Web Development" id="tab-3" aria-controls="tabpanel-3" />
-          <Tab label="Ecommerce" id="tab-4" aria-controls="tabpanel-4" />
-        </Tabs>
+        <div className={tabWrapper}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="basic tabs example"
+            className={tabInner}
+          >
+            <Tab label="All" id="tab-0" aria-controls="tabpanel-0" icon={<img src={allIcon.src} alt="All Icon" />} />
+            <Tab label="Blockchain" id="tab-1" aria-controls="tabpanel-1" icon={<img src={blockchainIcon.src} alt="Blockchain Icon" />} />
+            <Tab label="AI" id="tab-2" aria-controls="tabpanel-2" icon={<img src={aiIcon.src} alt="AI Icon" />} />
+            <Tab label="Web Development" id="tab-3" aria-controls="tabpanel-3" icon={<img src={webIcon.src} alt="Web Development Icon" />} />
+            <Tab label="Ecommerce" id="tab-4" aria-controls="tabpanel-4" icon={<img src={ecommIcon.src} alt="Ecommerce Icon" />} />
+          </Tabs>
+        </div>
+
         <TabPanel value={value} index={0}>
-          <FeaturedProject/>
-          <Ecommerce/>
+          <FeaturedProject />
+          <Ecommerce />
           <BlockChain />
+          <CustomPagination />
         </TabPanel>
       </Box>
     </section>
