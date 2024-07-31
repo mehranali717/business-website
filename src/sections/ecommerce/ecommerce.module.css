@@ -1,0 +1,7 @@
+.ecommerceWrapper {
+    background: url(../../../public/img/ecommercebg.png) no-repeat 14% 0%;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

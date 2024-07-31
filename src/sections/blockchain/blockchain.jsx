@@ -8,10 +8,11 @@ import jsIcon from "../../../public/icons/jsIcon.svg"
 import reactIcon from "../../../public/icons/reactIcon.svg"
 import icon2 from "../../../public/icons/icon2.svg"
 import GradientBtn from "@/components/gradient-btn"
+import classes from "./blockchain.module.css"
 
 const BlockChain = () => {
     return <>
-        <div className="flex items-center  justify-between">
+        <div className={`flex items-center  justify-between ${classes.blockChainWrapper}`}>
             <div style={{ width: '250px' }}>
                 <Typography
                     align="left"

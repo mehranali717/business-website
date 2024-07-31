@@ -1,4 +1,5 @@
 import Image from "next/image"
+import classes from "./teamStacks.module.css"
 import figmaIcon from "../../../public/icons/figmaIcon.svg"
 import reactIcon from "../../../public/icons/reactIcon2.svg"
 import cIcon from "../../../public/icons/c-icon.svg"
@@ -14,25 +15,27 @@ import expressIcon from "../../../public/icons/expressIcon.svg"
 import mongodbIcon from "../../../public/icons/mongodbIcon.svg"
 
 const stackIcons = [
-    {icon:figmaIcon},
-    {icon:reactIcon},
-    {icon:cIcon},
-    {icon:nodeIcon},
-    {icon:atomIcon},
-    {icon:jsIcon},
-    {icon:cssIcon},
-    {icon:xdIcon},
-    {icon:nextjsIcon},
-    {icon:golongIcon},
-    {icon:aiIcon},
-    {icon:expressIcon},
-    {icon:mongodbIcon},
+    { icon: figmaIcon },
+    { icon: reactIcon },
+    { icon: cIcon },
+    { icon: nodeIcon },
+    { icon: atomIcon },
+    { icon: jsIcon },
+    { icon: cssIcon },
+    { icon: xdIcon },
+    { icon: nextjsIcon },
+    { icon: golongIcon },
+    { icon: aiIcon },
+    { icon: expressIcon },
+    { icon: mongodbIcon },
 ]
 
 const { Typography } = require("@mui/material")
 
 const TeamStacks = () => {
-    return <section className="FHD:w-[1320px] MHD:w-[1100px] HD:w-[900px] lg:w-[800px] max-lg:hidden mx-auto " style={{paddingTop:'60px'}}>
+    return <div className={classes.teamStacksWrapper}>
+    <section className={`FHD:w-[1320px] MHD:w-[1100px] HD:w-[900px] lg:w-[800px] max-lg:hidden mx-auto`}>
+        <div style={{paddingBottom:"15px"}}>
         <Typography
             align="center"
             color="#FFFFFF"
@@ -57,9 +60,14 @@ const TeamStacks = () => {
         >
             that values improving people's lives through accessible design
         </Typography>
-        <div>
-            {stackIcons.map((item, index)=><Image src={item.icon} width height alt="icon" key={index} />)}
+        </div>
+        <div className={classes.stackIconsWrapper}>
+            {stackIcons.map((item, index) => <div key={index} className={classes.stacksIcon}>
+
+                <Image src={item.icon} width height alt="icon"  />
+            </div>)}
         </div>
     </section>
+    </div>
 }
 export default TeamStacks

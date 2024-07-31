@@ -112,3 +112,6 @@
 .css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon {
   border: 1px solid #343434
 }
+.tabsWrapper {
+  background: url(../../public/img/tabsbg.png) no-repeat center;
+}

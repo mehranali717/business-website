@@ -1,4 +1,5 @@
 import Image from "next/image"
+import classes from "./ecommerce.module.css"
 import arcImg from "../../../public/img/arc.png"
 import { Typography } from "@mui/material"
 import ecommImage from "../../../public/img/ecommImg.png"
@@ -11,7 +12,7 @@ import GradientBtn from "@/components/gradient-btn"
 
 const Ecommerce = () => {
     return <>
-        <div className="flex items-center justify-between" style={{paddingBottom:'123px'}}>
+        <div className={classes.ecommerceWrapper}>
             <div style={{ width: '250px' }}>
                 <Typography
                     align="left"

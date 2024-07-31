@@ -19,7 +19,8 @@ const CustomTab = (props) => {
   };
 
   return (
-    <section className="FHD:w-[1320px] MHD:w-[1100px] HD:w-[900px] lg:w-[800px] max-lg:hidden mx-auto relative">
+   <div className="tabsWrapper">
+     <section className="FHD:w-[1320px] MHD:w-[1100px] HD:w-[900px] lg:w-[800px] max-lg:hidden mx-auto relative">
       <Box sx={{ width: "100%" }}>
         <div className={tabWrapper}>
           <Tabs
@@ -44,6 +45,7 @@ const CustomTab = (props) => {
         </TabPanel>
       </Box>
     </section>
+   </div>
   );
 };
 

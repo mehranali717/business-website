@@ -1,0 +1,24 @@
+.teamStacksWrapper {
+    background: url(../../../public/img/stacksbg.png) no-repeat center;
+    padding: 60px 0px 152px;
+}
+.stackIconsWrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 670px;
+    width: 100%;
+    row-gap: 30px;
+    column-gap: 19px;
+    margin: 0px auto;
+    flex-wrap: wrap;
+}
+
+.stacksIcon {
+    width: 79px;
+    height: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #251C31;
+    border-radius: 50%;
+}
