@@ -1,8 +1,15 @@
 .protfolioHeroWrapper {
     background: url(../../../public/img/herobg.png) no-repeat center 22%;
 }
+
 .protfolioHero {
     padding-top: 127px;
+}
+
+.contentInner {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
 }
 
 .protfolioHeroDescription {
@@ -41,32 +48,38 @@
     box-shadow: 0px 4px 4px 0px #00000040;
     padding-bottom: 58px;
 }
+
 .protfolioHeroImg {
     padding-top: 20px;
     position: relative;
 }
+
 .portfolio {
     position: absolute;
     top: -5px;
     right: -173px;
 }
+
 .phonenumber {
     position: absolute;
     bottom: 145px;
     right: -153px;
 }
+
 .email {
     position: absolute;
     bottom: 50px;
     left: -10px;
 }
+
 .objectsWrapper {
     position: absolute;
     top: 0;
     right: 0;
 }
+
 .innovationImgWrapper {
     position: absolute;
-    top:120px;
+    top: 120px;
     left: -230px;
 }

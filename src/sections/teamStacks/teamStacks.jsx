@@ -34,7 +34,7 @@ const { Typography } = require("@mui/material")
 
 const TeamStacks = () => {
     return <div className={classes.teamStacksWrapper}>
-    <section className={`FHD:w-[1320px] MHD:w-[1100px] HD:w-[900px] lg:w-[800px] max-lg:hidden mx-auto`}>
+    <section className={`FHD:w-[1320px] MHD:w-[1100px] HD:w-[900px] lg:w-[800px] mx-auto`}>
         <div style={{paddingBottom:"15px"}}>
         <Typography
             align="center"

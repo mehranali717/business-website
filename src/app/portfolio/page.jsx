@@ -1,6 +1,6 @@
 import { PortfolioHero, TeamStacks } from "@/sections";
-import CustomTab from "../../components/tabs"
 import classes from "./page.module.css"
+import {CustomTab} from "@/shared"
 const Portfolio = () => <>
     <PortfolioHero />
     <CustomTab tabWrapper={classes.tabWrapper} tabInner={classes.tabInner} />

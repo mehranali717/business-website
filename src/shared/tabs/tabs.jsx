@@ -1,15 +1,15 @@
 "use client";
 import { Tabs, Tab, Box } from "@mui/material";
-import TabPanel from "./tabsPanel";
+import TabPanel from "../../components/tabsPanel";
 import { useState } from "react";
 import { BlockChain, Ecommerce, FeaturedProject } from "@/sections";
-import allIcon from "../../public/icons/AllIcon.svg";
-import blockchainIcon from "../../public/icons/blockchainIcon.svg";
-import aiIcon from "../../public/icons/AIIcon.svg";
-import webIcon from "../../public/icons/wdIcon.svg";
-import ecommIcon from "../../public/icons/ecommIcon.svg";
-import CustomPagination from "./pagination"
-
+import allIcon from "../../../public/icons/AllIcon.svg";
+import blockchainIcon from "../../../public/icons/blockchainIcon.svg";
+import aiIcon from "../../../public/icons/AIIcon.svg";
+import webIcon from "../../../public/icons/wdIcon.svg";
+import ecommIcon from "../../../public/icons/ecommIcon.svg";
+import CustomPagination from "../../components/pagination"
+import "./tabs.css"
 const CustomTab = (props) => {
   const { tabWrapper, tabInner } = props;
   const [value, setValue] = useState(0);
@@ -20,7 +20,7 @@ const CustomTab = (props) => {
 
   return (
    <div className="tabsWrapper">
-     <section className="FHD:w-[1320px] MHD:w-[1100px] HD:w-[900px] lg:w-[800px] max-lg:hidden mx-auto relative">
+     <section className="FHD:w-[1320px] MHD:w-[1100px] HD:w-[900px] lg:w-[800px] mx-auto relative">
       <Box sx={{ width: "100%" }}>
         <div className={tabWrapper}>
           <Tabs

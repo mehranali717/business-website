@@ -31,6 +31,7 @@ const config = {
         h1clamp: "clamp(1rem, 5vw + 1rem, 20rem)",
       },
       screens: {
+        // LG: "",
         HD: "1366px",
         MHD: "1860px",
         FHD: "1920px",
