@@ -1,5 +1,7 @@
 .protfolioHeroWrapper {
-    background: url(../../../public/img/herobg.png) no-repeat center 22%;
+    background: url(../../../public/img/herobg.png) no-repeat 0 12%;
+    background-size: cover;
+    padding: 0 20px 100px;
 }
 
 .protfolioHero {
@@ -63,7 +65,7 @@
 .phonenumber {
     position: absolute;
     bottom: 145px;
-    right: -153px;
+    right: -24%;
 }
 
 .email {
@@ -71,15 +73,92 @@
     bottom: 50px;
     left: -10px;
 }
-
-.objectsWrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 .innovationImgWrapper {
     position: absolute;
     top: 120px;
     left: -230px;
+}
+
+
+
+/* all media screen here */
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1199px){
+    .portfolio{
+        width: 100%;
+    max-width: 228px;
+    top: -1%;
+    right: -14%;
+}
+
+
+}
+@media screen and (max-width: 1440px){
+    .protfolioHeroWrapper {
+        background: url(../../../public/img/herobg.png) no-repeat 0% 12%;
+        background-size: cover;
+    }
+    .protfolioHero {
+        padding-top: 90px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .protfolioHeroDescription {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading {
+        padding-bottom: 0;
+    }
+    .protfolioHero {
+        padding-top: 70px;
+    }
+    
+}
+@media screen and (max-width: 992px){
+    .phonenumber {
+        right: 220px;
+    }
+    .protfolioHero {
+        padding-top: 50px;
+    }
+
+    .heading{
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .phonenumber{
+        right: 1px;
+        bottom: 43px;
+    }
+    
+}
+
+
+@media screen and (max-width: 480px){
+    .phonenumber{
+        width: 100%;
+        max-width: 120px;
+        right: 10px;
+        bottom: 38px;
+    }
+   .tagline{
+    font-size: 32px;
+   }
+    .states{
+        font-size: 66px;
+    }
+
+    .heading{
+        font-size: 49px;
+    }
+
+    .email{
+        width: 100%;
+        max-width: 120px;
+        left: 10px;
+        bottom: 28px; 
+    }
 }

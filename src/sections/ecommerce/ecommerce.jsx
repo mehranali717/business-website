@@ -2,7 +2,7 @@ import Image from "next/image"
 import classes from "./ecommerce.module.css"
 import arcImg from "../../../public/img/arc.png"
 import { Typography } from "@mui/material"
-import ecommImage from "../../../public/img/ecommImg.png"
+import ecommerceImage from "../../../public/img/ecommImg.png"
 import icon1 from "../../../public/icons/icon1.svg"
 import socialIcon from "../../../public/icons/socialIcon.svg"
 import jsIcon from "../../../public/icons/jsIcon.svg"
@@ -10,10 +10,10 @@ import reactIcon from "../../../public/icons/reactIcon.svg"
 import icon2 from "../../../public/icons/icon2.svg"
 import GradientBtn from "@/components/gradient-btn"
 
-const Ecommerce = () => {
+const FeaturedProject = () => {
     return <>
-        <div className={classes.ecommerceWrapper}>
-            <div style={{ width: '250px' }}>
+        <div className="flex items-center flex-wrap justify-between" style={{paddingBottom:'56px'}}>
+            <div className={classes.featureText} style={{ width: '25%' }}>
                 <Typography
                     align="left"
                     color="#0E35E3"
@@ -38,7 +38,7 @@ const Ecommerce = () => {
                     }}
                     sx={{ paddingBottom: '17px' }}
                 >
-                    Ecommerce Platform
+                   Ecommerece Platform
                 </Typography>
                 <Image src={arcImg} width height alt="arc" style={{paddingBottom:'19px'}}/>
                 <div className="flex justify-between" style={{width:'220px'}}>
@@ -49,10 +49,10 @@ const Ecommerce = () => {
                     <Image src={icon2} height width alt="icon" />
                 </div>
             </div>
-            <div>
-                <Image src={ecommImage} width height alt="feat image" />
+            <div className={classes.featuredImage} style={{ width: '50%' }}>
+                <Image src={ecommerceImage} width height alt="feat image" />
             </div>
-            <div style={{ width: '288px' }}>
+            <div className={classes.featureCta} style={{ width: '25%' }}>
                 <Typography
                     align="left"
                     color="#FFFFFF"
@@ -71,4 +71,4 @@ const Ecommerce = () => {
         </div>
     </>
 }
-export default Ecommerce
+export default FeaturedProject

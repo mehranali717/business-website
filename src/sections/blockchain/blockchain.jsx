@@ -1,4 +1,5 @@
 import Image from "next/image"
+import classes from "./blockchain.module.css"
 import arcImg from "../../../public/img/arc.png"
 import { Typography } from "@mui/material"
 import blockchainImage from "../../../public/img/blockchain.png"
@@ -8,12 +9,11 @@ import jsIcon from "../../../public/icons/jsIcon.svg"
 import reactIcon from "../../../public/icons/reactIcon.svg"
 import icon2 from "../../../public/icons/icon2.svg"
 import GradientBtn from "@/components/gradient-btn"
-import classes from "./blockchain.module.css"
 
-const BlockChain = () => {
+const FeaturedProject = () => {
     return <>
-        <div className={`flex items-center  justify-between ${classes.blockChainWrapper}`}>
-            <div style={{ width: '250px' }}>
+        <div className="flex items-center flex-wrap justify-between" style={{paddingBottom:'56px'}}>
+            <div className={classes.featureText} style={{ width: '25%' }}>
                 <Typography
                     align="left"
                     color="#0E35E3"
@@ -25,7 +25,7 @@ const BlockChain = () => {
                     }}
                     sx={{ paddingBottom: '1.35px' }}
                 >
-                    Blockchain
+                    Ecommerce
                 </Typography>
                 <Typography
                     align="left"
@@ -38,10 +38,10 @@ const BlockChain = () => {
                     }}
                     sx={{ paddingBottom: '17px' }}
                 >
-                    Consortia
+                   Ecommerece Platform
                 </Typography>
-                <Image src={arcImg} width height alt="arc" style={{ paddingBottom: '19px' }} />
-                <div className="flex justify-between" style={{ width: '220px' }}>
+                <Image src={arcImg} width height alt="arc" style={{paddingBottom:'19px'}}/>
+                <div className="flex justify-between" style={{width:'220px'}}>
                     <Image src={icon1} height width alt="icon" />
                     <Image src={socialIcon} height width alt="icon" />
                     <Image src={jsIcon} height width alt="icon" />
@@ -49,10 +49,10 @@ const BlockChain = () => {
                     <Image src={icon2} height width alt="icon" />
                 </div>
             </div>
-            <div>
+            <div className={classes.featuredImage} style={{ width: '50%' }}>
                 <Image src={blockchainImage} width height alt="feat image" />
             </div>
-            <div style={{ width: '288px' }}>
+            <div className={classes.featureCta} style={{ width: '25%' }}>
                 <Typography
                     align="left"
                     color="#FFFFFF"
@@ -71,4 +71,4 @@ const BlockChain = () => {
         </div>
     </>
 }
-export default BlockChain
+export default FeaturedProject

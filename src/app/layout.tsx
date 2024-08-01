@@ -6,8 +6,6 @@ import TopNav from "@/components/TopNav";
 import { ThemeProvider } from "@/components/theme-provider";
 import Head from "next/head";
 import Script from "next/script";
-import SuccessSolution from "@/components/success-solution";
-import Footer from "@/components/footer";
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700"],
@@ -98,7 +96,6 @@ export default function RootLayout({
           <div className="w-full flex flex-col min-h-dvh h-full bg-[#0E0C15] dark:bg-[#0E0C15]">
             <TopNav />
             {children}
-            <SuccessSolution />
           </div>
         </ThemeProvider>
       </body>

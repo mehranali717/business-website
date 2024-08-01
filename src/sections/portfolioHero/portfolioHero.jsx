@@ -11,10 +11,10 @@ import GradientBtn from "@/components/gradient-btn"
 const PortfolioHero = () => <section className={classes.protfolioHeroWrapper}>
     <div className="FHD:w-[1320px] MHD:w-[1100px] HD:w-[900px] lg:w-[800px] mx-auto relative">
         <div className={classes.protfolioHero}>
-            <div className='flex flex-row md:flex-row'>
+            <div className='flex flex-col md:items-center lg:flex-row'>
                 <div className={classes.protfolioHeroDescription}>
                     <span className={classes.tagline}>We've delivered </span>
-                    <span className={classes.states}>200+</span>
+                   <span className={classes.states}>200+</span>
                     <h1 className={classes.heading}>Successful
                         Projects</h1>
                     <div className="max-md:justify-center max-md:flex max-md:items-center">
@@ -22,9 +22,6 @@ const PortfolioHero = () => <section className={classes.protfolioHeroWrapper}>
                     </div>
                 </div>
                 <div className={classes.protfolioHeroImg}>
-                    <div className={classes.portfolio}>
-                        <Image src={portfolioImg} width height />
-                    </div>
                     <Image src={protfolioHeroImage} width height alt="protfolioHero image" />
                     <div className={classes.phonenumber}>
                         <Image src={phonenumberImg} width height />
@@ -38,9 +35,6 @@ const PortfolioHero = () => <section className={classes.protfolioHeroWrapper}>
         <div className={`${classes.innovationImgWrapper}`}>
             <Image src={innvationImg} layout="responsive" width height alt="innovation img" />
         </div>
-    </div>
-    <div className={classes.objectsWrapper}>
-        <Image src={objectsImg} width height alt="objects image here" />
     </div>
 </section>
 export default PortfolioHero

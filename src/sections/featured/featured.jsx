@@ -1,4 +1,5 @@
 import Image from "next/image"
+import classes from "./featured.module.css"
 import arcImg from "../../../public/img/arc.png"
 import { Typography } from "@mui/material"
 import featuredImage from "../../../public/img/featuredImg.png"
@@ -11,8 +12,8 @@ import GradientBtn from "@/components/gradient-btn"
 
 const FeaturedProject = () => {
     return <>
-        <div className="flex items-center  justify-between" style={{paddingBottom:'56px'}}>
-            <div style={{ width: '250px' }}>
+        <div className="flex items-center flex-wrap justify-between" style={{paddingBottom:'56px'}}>
+            <div className={classes.featureText} style={{ width: '25%' }}>
                 <Typography
                     align="left"
                     color="#0E35E3"
@@ -48,10 +49,10 @@ const FeaturedProject = () => {
                     <Image src={icon2} height width alt="icon" />
                 </div>
             </div>
-            <div>
+            <div className={classes.featuredImage} style={{ width: '50%' }}>
                 <Image src={featuredImage} width height alt="feat image" />
             </div>
-            <div style={{ width: '288px' }}>
+            <div className={classes.featureCta} style={{ width: '25%' }}>
                 <Typography
                     align="left"
                     color="#FFFFFF"
